@@ -2,33 +2,36 @@
 <html lang="en">
 <head>
   <!-- REQUIRED + RECOMMENDED META -->
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="author" content="Limitless Fitness" />
-  <meta name="description" content="Limitless Fitness: classes, personal training, and flexible memberships in a supportive community. Join today to transform your life and reach your goals." />
-  <meta name="robots" content="index, follow" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Limitless Fitness">
+  <meta name="description" content="Limitless Fitness: classes, personal training, and flexible memberships in a supportive community. Join today to transform your life and reach your goals.">
+  <meta name="robots" content="index, follow">
 
-  <!-- Canonical (update to your published URL when you have it) -->
-  <link rel="canonical" href="https://example.com/limitless-fitness/" />
+  <!-- Canonical -->
+  <link rel="canonical" href="https://cryshark17.github.io/limitlessfitnessgym/">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Transform Your Life at Limitless Fitness" />
-  <meta property="og:description" content="Classes, personal training, and flexible memberships in a supportive community. Join today and reach your goals." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://example.com/limitless-fitness/" />
-  <meta property="og:image" content="https://example.com/limitless-fitness/images/facility-1280.jpg" />
+  <meta property="og:title" content="Transform Your Life at Limitless Fitness">
+  <meta property="og:description" content="Classes, personal training, and flexible memberships in a supportive community. Join today and reach your goals.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://cryshark17.github.io/limitlessfitnessgym/">
+  <meta property="og:image" content="https://cryshark17.github.io/limitlessfitnessgym/images/facility-1280.jpg">
 
   <!-- Twitter (Summary Large Image) -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:site" content="@LimitlessFitness" />
-  <meta name="twitter:creator" content="@LimitlessFitness" />
-  <meta name="twitter:title" content="Transform Your Life at Limitless Fitness" />
-  <meta name="twitter:description" content="Classes, personal training, and flexible memberships in a supportive community." />
-  <meta name="twitter:image" content="https://example.com/limitless-fitness/images/facility-1280.jpg" />
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@LimitlessFitness">
+  <meta name="twitter:creator" content="@LimitlessFitness">
+  <meta name="twitter:title" content="Transform Your Life at Limitless Fitness">
+  <meta name="twitter:description" content="Classes, personal training, and flexible memberships in a supportive community.">
+  <meta name="twitter:image" content="https://cryshark17.github.io/limitlessfitnessgym/images/facility-1280.jpg">
 
   <title>Transform Your Life at Limitless Fitness</title>
 
-  <!-- (Optional helper styles for skip link only; remove if you already have CSS) -->
+  <!-- Your stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- (Optional helper styles for skip link only) -->
   <style>
     .skip-link {
       position: absolute; left: -9999px; top: auto; width: 1px; height: 1px; overflow: hidden;
@@ -59,14 +62,15 @@
     <p>Unleash your strength, embrace the challenge, and join a community dedicated to your fitness journey.</p>
     <p><a href="#">Join Now</a></p>
 
-    <!-- Responsive hero image (update file names to match your images folder) -->
+    <!-- Responsive hero image -->
     <picture>
-      <!-- Large -->
       <source srcset="images/facility-1280.jpg 1280w" media="(min-width:1280px)">
-      <!-- Medium -->
-      <source srcset="images/facility-920.jpg 920w" media="(min-width:920px)">
-      <!-- Small / default -->
-      <img src="images/facility.jpg" alt="Modern gym facility with free weights, cardio machines, and open training space." width="1280" height="720">
+      <source srcset="images/facility-920.jpg 920w"   media="(min-width:920px)">
+      <img
+        src="images/facility.jpg"
+        alt="Modern gym facility with free weights, cardio machines, and open training space."
+        width="1280" height="720"
+        sizes="(min-width:1280px) 1280px, (min-width:920px) 920px, 100vw">
     </picture>
   </header>
 
@@ -116,8 +120,12 @@
       <!-- Responsive class image -->
       <picture>
         <source srcset="images/classes-1280.jpg 1280w" media="(min-width:1280px)">
-        <source srcset="images/classes-920.jpg 920w" media="(min-width:920px)">
-        <img src="images/classes.jpg" alt="Group fitness class in progress with an instructor leading participants." width="1280" height="720">
+        <source srcset="images/classes-920.jpg 920w"   media="(min-width:920px)">
+        <img
+          src="images/classes.jpg"
+          alt="Group fitness class in progress with an instructor leading participants."
+          width="1280" height="720"
+          sizes="(min-width:1280px) 1280px, (min-width:920px) 920px, 100vw">
       </picture>
     </section>
 
@@ -130,8 +138,12 @@
       <!-- Responsive training image -->
       <picture>
         <source srcset="images/dumbells-1280.jpg 1280w" media="(min-width:1280px)">
-        <source srcset="images/dumbells-920.jpg 920w" media="(min-width:920px)">
-        <img src="images/dumbells.jpg" alt="Close-up of dumbbells neatly organized in a rack at the gym." width="1280" height="720">
+        <source srcset="images/dumbells-920.jpg 920w"   media="(min-width:920px)">
+        <img
+          src="images/dumbells.jpg"
+          alt="Close-up of dumbbells neatly organized in a rack at the gym."
+          width="1280" height="720"
+          sizes="(min-width:1280px) 1280px, (min-width:920px) 920px, 100vw">
       </picture>
     </section>
 
@@ -153,17 +165,17 @@
         <form action="https://wp.zybooks.com/form-viewer.php" method="post">
           <div>
             <label for="full-name">Full Name</label>
-            <input id="full-name" name="full_name" type="text" autocomplete="name" required />
+            <input id="full-name" name="full_name" type="text" autocomplete="name" required>
           </div>
 
           <div>
             <label for="email">Email Address</label>
-            <input id="email" name="email" type="email" autocomplete="email" required />
+            <input id="email" name="email" type="email" autocomplete="email" required>
           </div>
 
           <div>
             <label for="phone">Phone Number</label>
-            <input id="phone" name="phone" type="tel" autocomplete="tel" />
+            <input id="phone" name="phone" type="tel" autocomplete="tel">
           </div>
 
           <div>
