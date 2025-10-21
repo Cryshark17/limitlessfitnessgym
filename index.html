@@ -28,10 +28,10 @@
 
   <title>Transform Your Life at Limitless Fitness</title>
 
-  <!-- Your stylesheet -->
+  <!-- Site CSS -->
   <link rel="stylesheet" href="styles.css">
 
-  <!-- (Optional helper styles for skip link only) -->
+  <!-- helper styles for the skip link -->
   <style>
     .skip-link {
       position: absolute; left: -9999px; top: auto; width: 1px; height: 1px; overflow: hidden;
@@ -62,15 +62,14 @@
     <p>Unleash your strength, embrace the challenge, and join a community dedicated to your fitness journey.</p>
     <p><a href="#">Join Now</a></p>
 
-    <!-- Responsive hero image -->
+    <!-- Responsive hero image (art direction, no width descriptors) -->
     <picture>
-      <source srcset="images/facility-1280.jpg 1280w" media="(min-width:1280px)">
-      <source srcset="images/facility-920.jpg 920w"   media="(min-width:920px)">
+      <source media="(min-width:1280px)" srcset="images/facility-1280.jpg">
+      <source media="(min-width:920px)" srcset="images/facility-920.jpg">
       <img
         src="images/facility.jpg"
         alt="Modern gym facility with free weights, cardio machines, and open training space."
-        width="1280" height="720"
-        sizes="(min-width:1280px) 1280px, (min-width:920px) 920px, 100vw">
+        width="1280" height="720">
     </picture>
   </header>
 
@@ -119,13 +118,12 @@
 
       <!-- Responsive class image -->
       <picture>
-        <source srcset="images/classes-1280.jpg 1280w" media="(min-width:1280px)">
-        <source srcset="images/classes-920.jpg 920w"   media="(min-width:920px)">
+        <source media="(min-width:1280px)" srcset="images/classes-1280.jpg">
+        <source media="(min-width:920px)" srcset="images/classes-920.jpg">
         <img
           src="images/classes.jpg"
           alt="Group fitness class in progress with an instructor leading participants."
-          width="1280" height="720"
-          sizes="(min-width:1280px) 1280px, (min-width:920px) 920px, 100vw">
+          width="1280" height="720">
       </picture>
     </section>
 
@@ -137,13 +135,12 @@
 
       <!-- Responsive training image -->
       <picture>
-        <source srcset="images/dumbells-1280.jpg 1280w" media="(min-width:1280px)">
-        <source srcset="images/dumbells-920.jpg 920w"   media="(min-width:920px)">
+        <source media="(min-width:1280px)" srcset="images/dumbells-1280.jpg">
+        <source media="(min-width:920px)" srcset="images/dumbells-920.jpg">
         <img
           src="images/dumbells.jpg"
           alt="Close-up of dumbbells neatly organized in a rack at the gym."
-          width="1280" height="720"
-          sizes="(min-width:1280px) 1280px, (min-width:920px) 920px, 100vw">
+          width="1280" height="720">
       </picture>
     </section>
 
@@ -255,3 +252,4 @@
   </footer>
 </body>
 </html>
+
